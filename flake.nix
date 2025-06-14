@@ -25,6 +25,7 @@
       firefoxTheme  = (import ./templates/firefoxTheme.nix)  themeFull;
       ghosttyConfig = (import ./templates/ghosttyConfig.nix) themeFull;
       tmTheme       = (import ./templates/tmTheme.nix)       themeFull;
+      zathuraTheme  = (import ./templates/zathuraTheme.nix)  themeFull;
     };
   } // builtins.mapAttrs (name: self.custom) raw;
 }
